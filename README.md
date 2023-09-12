@@ -11,7 +11,7 @@ Welcome, my name is Thomas, I love writing code. This is a secondary Github acco
 
 #### Logical sequence:
 - Read this readme.md
-- Check the portofolio: www.url.com ([or check repository directly](https://github.com/tmslpm?tab=repositories))
+- Check the portofolio: [tmslpm.github.io/portfolio](https://tmslpm.github.io/portfolio/#/) **or** [check repository directly](https://github.com/tmslpm?tab=repositories)
 
 <hr>
 
