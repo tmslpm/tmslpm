@@ -9,9 +9,11 @@ Welcome, my name is Thomas! This is a secondary Github account intended to provi
 
 <hr>
 
-Logical sequence:
+#### Logical sequence:
 - Read this readme.md to
 - Check the portofolio: www.url.com (or Check repository directly)
+
+<hr>
 
 <div style="text-align:center" align="center">
   
