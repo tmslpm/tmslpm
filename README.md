@@ -1,15 +1,15 @@
-### Hi there 👋
- 
-**tmslpm/tmslpm** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+### System.out.println("Hello World");
 
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
+soon
  
+- 🔭 I’m currently working on Minecraft mod development
+- 🌱 I’m currently learning OpenGL with LWJGL  
+- 📫 How to reach me: email or linkedin 
+
+soon
+
+<div style="text-align:center" align="center">
+  
+![stats github readme](https://github-readme-stats.vercel.app/api?username=tmslpm&show_icons=true&theme=vue-dark%22%3E)
+
+</div>
