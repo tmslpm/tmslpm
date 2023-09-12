@@ -1,12 +1,17 @@
 ### System.out.println("Hello World");
 
-soon
- 
+Welcome, my name is Thomas! This is a secondary Github intended to provide examples, works, projects, etc...
+
+Logical sequence:
+- Read this readme.md to
+- Check the portofolio: www.url.com
+or:
+- Check repository directly...
+
+- 🚀 I'm currently looking for a mission, job, project, training...
 - 🔭 I’m currently working on Minecraft mod development
 - 🌱 I’m currently learning OpenGL with LWJGL  
 - 📫 How to reach me: email or linkedin 
-
-soon
 
 <div style="text-align:center" align="center">
   
