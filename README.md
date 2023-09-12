@@ -1,6 +1,6 @@
 ### System.out.println("Hello World");
 
-Welcome, my name is Thomas! This is a secondary Github intended to provide examples, works, projects, etc...
+Welcome, my name is Thomas! This is a secondary Github account intended to provide examples, works, projects, etc...
 
 Logical sequence:
 - Read this readme.md to
