@@ -10,7 +10,7 @@ Welcome, my name is Thomas! This is a secondary Github account intended to provi
 <hr>
 
 #### Logical sequence:
-- Read this readme.md to
+- Read this readme.md
 - Check the portofolio: www.url.com ([or check repository directly](https://github.com/tmslpm?tab=repositories))
 
 <hr>
