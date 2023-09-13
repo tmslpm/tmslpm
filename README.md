@@ -2,8 +2,12 @@
   System.out.println("Hello World"); 
 </h1> 
 <div style="text-align:center" align="center"> 
-  <img height=200 align="center" src="https://github-readme-stats.vercel.app/api?username=tmslpm" />
-  <img height=200 align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=tmslpm&layout=compact&langs_count=8&card_width=320" /><br><br>
+  <a href="#">
+    <img height=200 align="center" src="https://github-readme-stats.vercel.app/api?username=tmslpm" />
+  </a>
+  <a href="#">
+    <img height=200 align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=tmslpm&layout=compact&langs_count=8&card_width=320" />
+  </a>
 </div> 
 
 Welcome, my name is Thomas, I love writing code. This is a secondary Github account intended to provide examples, works, projects, etc...
