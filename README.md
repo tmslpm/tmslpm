@@ -20,7 +20,7 @@
       </ul>
     </td>
     <td>
-      <a href="https://github.com/tmslpm"><img height=175 align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=tmslpm&layout=compact&langs_count=8&card_width=320" /></a> 
+      <a href="https://github.com/tmslpm"><img height=175 align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=tmslpm&layout=compact&langs_count=8&card_width=320&hide_border=true&theme=transparent" /></a> 
     </td>
   </tr>
   <tr>
@@ -33,10 +33,10 @@
       </h3> 
       <div style="text-align:center" align="center">
         <a href="https://github.com/tmslpm/portfolio" align="center" title="Click to open and view the repositorie: Portfolio" alt="open url github.com/tmslpm/portfolio">
-          <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=tmslpm&repo=portfolio" />
+          <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=tmslpm&repo=portfolio&border_radius=0&theme=transparent" />
         </a>
         <a href="https://github.com/tmslpm/automation" title="Click to open and view the repositorie: Automation" alt="open url github.com/tmslpm/automation">
-          <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=tmslpm&repo=automation" />
+          <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=tmslpm&repo=automation&border_radius=0&theme=transparent" />
         </a>
       </div> 
        <br/>
