@@ -7,6 +7,7 @@
       </div>
       <h3>Welcome, my name is Thomas !</h3>
       <p>I love writing code. This is a secondary Github account intended to provide examples, works, projects, etc...</p>
+      <br/>
     </td>
   </tr>
   <tr>
