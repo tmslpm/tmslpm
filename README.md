@@ -13,9 +13,9 @@
   <tr>
     <td>
       <ul>
-        <li>🚀 I'm currently looking for a mission, job, project, training...</li>
+        <li>🚀 I'm currently looking for a job</li>
         <li>🔭 I’m currently working on Minecraft mod development</li>
-        <li>🌱 I’m currently learning OpenGL with LWJGL  </li>
+        <li>🌱 I’m currently learning OpenGL (with LWJGL)</li>
         <li>📫 How to reach me: email or linkedin</li>
       </ul>
     </td>
