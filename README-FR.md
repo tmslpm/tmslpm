@@ -31,7 +31,7 @@
     <td>
       <ul>
         <li>🚀 Je suis actuellement à la recherche d'un emploi</li> 
-        <li>🔭 I’m currently working on Minecraft mod development</li>
+        <li>🔭 Je travaille aussi sur le développement de mods Minecraft</li>
         <li>🌱 Je suis en train d'apprendre OpenGL (avec LWJGL)</li>
         <li>📫 Comment me joindre : email or linkedin</li>
       </ul>
