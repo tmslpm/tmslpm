@@ -1,3 +1,20 @@
+<table>
+ <tr>
+   <td>
+     <details>
+      <summary>traduction: <b>FR</b></summary><br/>
+      <input type="checkbox" checked />
+      <a href="https://github.com/tmslpm/tmslpm/blob/main/README.md" 
+        title="cliquez pour traduire en EN" 
+        alt="cliquez pour traduire en EN"><pre>🔲 EN</pre></a>
+      <a href="https://github.com/tmslpm/tmslpm/blob/main/README-FR.md" 
+        title="cliquez pour traduire en FR" 
+        alt="cliquez pour traduire en FR"><pre>☑️ FR</pre></a>
+    </details>
+   </td>
+ </tr>
+</table>
+
 <table style="text-align:center" align="center">
   <tr>
     <td colspan="2">

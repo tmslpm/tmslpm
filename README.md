@@ -2,10 +2,14 @@
  <tr>
    <td>
      <details>
-      <summary>translation: <b>ENGLISH</b></summary><br/>
+      <summary>translation: <b>EN</b></summary><br/>
       <input type="checkbox" checked />
-      <a href="https://github.com/tmslpm/tmslpm/edit/main/README.md" title="click to translate into EN" alt="click to translate into English"><pre>☑️ ENGLISH</pre></a>
-      <a href="https://github.com/tmslpm/tmslpm/edit/main/README-FR.md" title="click to translate into FR" alt="click to translate into French"><pre>🔲 FRENCH</pre></a>
+      <a href="https://github.com/tmslpm/tmslpm/blob/main/README.md" 
+        title="click to translate into EN" 
+        alt="click to translate into EN"><pre>☑️ EN</pre></a>
+      <a href="https://github.com/tmslpm/tmslpm/blob/main/README-FR.md" 
+        title="click to translate into FR" 
+        alt="click to translate into FR"><pre>🔲 FR</pre></a>
     </details>
    </td>
  </tr>
