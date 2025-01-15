@@ -1,4 +1,3 @@
-
 terraform {
   required_providers {
     github = {
@@ -18,12 +17,12 @@ resource "github_repository" "tmslpm" {
   description = "Repository managed by Terraform!"
   topics      = ["terraform", "github", "cli"]
 
-  is_template     = false
-  has_wiki        = false
-  has_projects    = false
-  has_downloads   = false
-  has_issues      = true
-  has_discussions = false
+  is_template        = false
+  has_wiki           = false
+  has_projects       = false
+  has_downloads      = false
+  has_issues         = true
+  has_discussions    = false
   archive_on_destroy = false
 
   vulnerability_alerts = true
@@ -36,10 +35,18 @@ resource "github_repository" "tmslpm" {
       status = "enabled"
     }
   }
+
+  #pages {
+  #  build_type = "workflow"
+  #  source {
+  #    branch = "main"
+  #    path   = "/dist"
+  #  }
+  #}
 }
 
 resource "github_repository_dependabot_security_updates" "tmslpm" {
   repository = var.github_repository_name
   enabled    = true
 }
- 
+
