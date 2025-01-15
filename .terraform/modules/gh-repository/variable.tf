@@ -35,10 +35,13 @@ variable "github_repository_name" {
   }
 }
 
-variable "github_repository_subprojects" {
-  description = "A set of subproject names, represented as a set of strings. These subprojects can be used to manage separate parts or components within the main repository."
-  type        = set(string)
+variable "github_repository_license" {
+  description = "The license of the GitHub repository"
   nullable    = false
   sensitive   = false
-  default     = ["foo", "bar"]
+  default     = ""
+  validation {
+    condition     = length(var.github_repository_license) > 0
+    error_message = "variable terraform \"github_repository_license\" cannot be empty"
+  }
 }
