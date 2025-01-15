@@ -1,21 +1,38 @@
+# 
+# --------------------------------------------------------------
+# First Setup:
+#
+# tf init ^
+#  --backend-config="./terraform.tfbackend" ^ 
+#  -backend-config="access_key=%BUCKET_ACCESS%" ^ 
+#  -backend-config="secret_key=%BUCKET_SECRET%"
+# --------------------------------------------------------------
+# Then:
+#
+# tf plan -var="github_token=%GITHUB_TOKEN%"
+# 
+# --------------------------------------------------------------
+# 
+
 terraform {
   required_version = ">= 1.6.3"
-  # partial: "./backend.tf.config" (see "./backend.tf.config.template")
   backend "s3" {
-    endpoints = {
-      s3 = "" # (partial)
-    }
-    secret_key                  = "" # (partial)
-    access_key                  = "" # (partial)
-    bucket                      = "" # (partial)
-    key                         = "" # (partial)
-    region                      = "" # (partial)
     encrypt                     = true
     skip_credentials_validation = true
     skip_requesting_account_id  = true
     skip_metadata_api_check     = true
     skip_region_validation      = true
     skip_s3_checksum            = true
+
+    # env
+    secret_key = "" # (env var -> -backend-config="access_key= ... ")
+    access_key = "" # (env var -> -backend-config="access_key= ... ")
+
+    # partial
+    endpoints = { s3 = "" } # (partial variable -> ./terraform.tfbackend)
+    bucket    = ""          # (partial variable -> ./terraform.tfbackend)
+    key       = ""          # (partial variable -> ./terraform.tfbackend)
+    region    = ""          # (partial variable -> ./terraform.tfbackend) 
   }
 }
 
