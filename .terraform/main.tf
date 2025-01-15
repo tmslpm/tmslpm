@@ -2,10 +2,7 @@
 # --------------------------------------------------------------
 # First Setup:
 #
-# tf init ^
-#  --backend-config="./terraform.tfbackend" ^ 
-#  -backend-config="access_key=%BUCKET_ACCESS%" ^ 
-#  -backend-config="secret_key=%BUCKET_SECRET%"
+# tf init --backend-config="./terraform.tfbackend" -backend-config="access_key=%BUCKET_ACCESS%" -backend-config="secret_key=%BUCKET_SECRET%"
 # --------------------------------------------------------------
 # Then:
 #
