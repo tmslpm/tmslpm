@@ -1,0 +1,331 @@
+<div class="wrapperPokedex">
+  <div class="pokedex">
+    <div class="pokedexBase">
+      <div class="pokedexHead">
+        <div class="pokedexHeadCol1">
+          <div
+            class="circle"
+            [ngClass]="{ playAnimation: this.hasAnimationTTSPlayed }"
+          ></div>
+        </div>
+        <div class="pokedexHeadCol2">
+          <div class="bar"></div>
+          <div class="diag"></div>
+          <div
+            class="circle red"
+            [ngClass]="{ playAnimation: this.hasAnimationLedPlayed }"
+          ></div>
+          <div
+            class="circle yel"
+            [ngClass]="{ playAnimation: this.hasAnimationLedPlayed }"
+          ></div>
+          <div
+            class="circle gre"
+            [ngClass]="{ playAnimation: this.hasAnimationLedPlayed }"
+          ></div>
+        </div>
+      </div>
+      <div class="pokedexScreen">
+        <div
+          class="pokedexScreenDisplay bgScreen"
+          (click)="this.onChangeScreenList()"
+          (mousewheel)="this.onScrollScreenList($event)"
+        >
+          <!-- IF: Is current screen pokedex -->
+          <ng-container
+            *ngIf="this.isCurrentPokedexScreenlList; else containerPokemonList"
+          >
+            <div
+              class="pokedexScreenList"
+              i18n-title
+              title="click left: go to pokemon list for the pokedex selected"
+            >
+              <ng-container
+                *ngIf="this.getPokedexList.length > 0; else loadingData"
+              >
+                <!-- ITERATE POKEDEX LIST -->
+                <ng-container *ngFor="let v of this.getPokedexList; index as i">
+                  <div
+                    *ngIf="
+                      i >= this.getCurrScreenList.getStartIndex &&
+                      i < this.getCurrScreenList.getEndIndex
+                    "
+                    [ngClass]="{
+                      current:
+                        i >= this.getCurrScreenList.getStartIndex &&
+                        this.getCurrScreenList.getSelectorIndex == i
+                    }"
+                  >
+                    <img
+                      class="pokeball"
+                      src="img/pokedex.png"
+                      alt=""
+                      [style]="v.id > 0 ? '' : 'filter: grayscale(100%);'"
+                      width="14px"
+                      height="14px"
+                    />
+                    <p class="name">{{ v.name[this.getLang] }}</p>
+                    <ng-container *ngIf="v.id > 0">
+                      <p style="margin-left: auto">{{ v.id }}</p>
+                    </ng-container>
+                  </div>
+                </ng-container>
+              </ng-container>
+            </div>
+          </ng-container>
+          <!-- Else: is pokemon list -->
+          <ng-template #containerPokemonList>
+            <div
+              class="pokedexScreenList"
+              i18n-title
+              title="click left: back to pokedex list"
+            >
+              <ng-container
+                *ngFor="let v of this.getSelectedPokemonList; index as ii"
+              >
+                <div
+                  *ngIf="ii >= this.getCurrScreenList.getStartIndex"
+                  [ngClass]="{
+                    current:
+                      ii >= this.getCurrScreenList.getStartIndex &&
+                      this.getCurrScreenList.getSelectorIndex == ii
+                  }"
+                >
+                  <img
+                    class="pokeball"
+                    src="img/pokeball.png"
+                    i18n-alt
+                    alt="Pokeball Icon"
+                    [style]="v.id > 0 ? '' : 'filter: grayscale(100%);'"
+                    width="14px"
+                    height="14px"
+                  />
+                  <p class="name">{{ v.name[this.getLang] }}</p>
+                  <ng-container *ngIf="v.id > 0">
+                    <p style="margin-left: auto">n°{{ v.id }}</p>
+                  </ng-container>
+                </div>
+              </ng-container>
+            </div>
+          </ng-template>
+        </div>
+        <div class="diag"></div>
+      </div>
+      <div class="pokedexPad">
+        <div class="pokedexPadtBodyLeft">
+          <div class="pokedexPadtHead">
+            <!-- EVENT: BUTTON ENABLED TTS -->
+            <div
+              class="btnCircle pointer"
+              i18n-title
+              title="Enable Text To Speech"
+              (click)="this.onClickBtnTTS(rightScreenInformationText)"
+            ></div>
+            <!-- EVENT: BUTTON SHOW POKEDEX LIST -->
+            <div
+              class="btnOval red pointer"
+              i18n-title
+              title="Display pokedex list"
+              (click)="this.onChangeScreenList(true)"
+            ></div>
+            <!-- EVENT: BUTTON SHOW POKEMON LIST -->
+            <div
+              class="btnOval blue pointer"
+              i18n-title
+              title="Show pokemons from selected pokedex"
+              (click)="this.onChangeScreenList(false)"
+            ></div>
+          </div>
+          <div class="pokedexPadtBodyScreenDisplay bgScreen">
+            <!-- IF: Is current screen pokedex -->
+            <ng-container
+              *ngIf="
+                this.isCurrentPokedexScreenlList;
+                else containerPokemonSprite
+              "
+            >
+              <img
+                src="img/pokemon.png"
+                i18n-alt
+                alt="Pokedex by TMSLPM"
+              />
+            </ng-container>
+            <!-- Else: is pokemon list -->
+            <ng-template #containerPokemonSprite>
+              <img
+                [src]="
+                  this.getNextSprite
+                    ? this.getNextSprite
+                    : 'img/unknown.png'
+                "
+                i18n-alt
+                alt="Pokemon image"
+              />
+            </ng-template>
+          </div>
+        </div>
+        <div class="pokedexPadtBodyRight">
+          <!-- EVENT: BUTTON TOP BOT LEFT RIGHT -->
+          <div class="pokedexPadtBodybtnCross">
+            <div
+              (click)="onClickBtnLeftCross('top')"
+              class="top pointer"
+              i18n-title
+              title="action: select previous pokedex/pokemon"
+            ></div>
+            <div
+              (click)="onClickBtnLeftCross('bot')"
+              class="bot pointer"
+              i18n-title
+              title="action: select next pokedex/pokemon"
+            ></div>
+            <div
+              (click)="onClickBtnLeftCross('left')"
+              class="left pointer"
+              i18n-title
+              title="action: show previous sprite"
+            ></div>
+            <div
+              (click)="onClickBtnLeftCross('right')"
+              class="right pointer"
+              i18n-title
+              title="action: show next sprite"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pokedexBase right">
+      <div class="pokedexHead">
+        <div class="pokedexHeadCol1"></div>
+        <div class="pokedexHeadCol2">
+          <div class="bar"></div>
+          <div class="diag"></div>
+        </div>
+      </div>
+      <div class="pokedexScreen">
+        <div class="pokedexRightScreenDisplay bgScreen">
+          <div #rightScreenInformationText class="content">
+            <!-- IF: Is current screen pokedex -->
+            <ng-container
+              *ngIf="
+                this.isCurrentPokedexScreenlList;
+                else containerPokemonDetails
+              "
+            >
+              <ng-container *ngIf="this.getSelectedPokedex; else loadingData">
+                <p>
+                  <span class="bold" i18n>Name</span>:
+                  {{ this.getSelectedPokedex.name[this.getLang] }}
+                </p>
+                <p>
+                  <span class="bold" i18n>Total Pokemon</span>:
+                  {{ this.getSelectedPokedex.pokemon.length }}
+                </p>
+                <p>
+                  <span class="bold" i18n>Description</span>:
+                  {{ this.getSelectedPokedex.desc[this.getLang] }}
+                </p>
+              </ng-container>
+            </ng-container>
+            <!-- Else: is pokemon list -->
+            <ng-template #containerPokemonDetails>
+              <ng-container
+                *ngIf="
+                  this.getSelectedPokemon && this.getSelectedPokemon.id > 0;
+                  else loadingData
+                "
+              >
+                <p>
+                  <span class="bold" i18n>Name</span>:
+                  {{ this.getSelectedPokemon.name[this.getLang] }}
+                </p>
+                <p>
+                  <span class="bold" i18n>Height</span>:
+                  {{
+                    this.getSelectedPokemon.height
+                      | convertUnitMeasure : "dm" : "cm"
+                  }}
+                </p>
+                <p>
+                  <span class="bold" i18n>Weight</span>:
+                  {{
+                    this.getSelectedPokemon.weight
+                      | convertUnitMeasure : "hg" : "kg"
+                  }}
+                </p>
+                <p>
+                  <span class="bold" i18n>Types</span>:
+                  {{ this.getSelectedPokemon.types }}
+                </p>
+                <p>
+                  <span class="bold" i18n>Description</span>:
+                  {{ this.getSelectedPokemon.desc[this.getLang] }}
+                </p>
+              </ng-container>
+            </ng-template>
+          </div>
+        </div>
+        <div class="pokedexScreenKeyboard">
+          <div
+            (click)="this.onClickBtnRight()"
+            class="key pointer bold"
+            i18n-title
+            title="no action available (unused)"
+          >
+            ?
+          </div>
+          <div
+            (click)="this.onClickBtnRight()"
+            class="key pointer bold"
+            i18n-title
+            title="no action available (unused)"
+          >
+            ?
+          </div>
+          <div
+            (click)="this.onClickBtnRight()"
+            class="key pointer bold"
+            i18n-title
+            title="no action available (unused)"
+          >
+            ?
+          </div>
+          <div
+            (click)="this.onClickBtnRight()"
+            class="key pointer bold"
+            i18n-title
+            title="no action available (unused)"
+          >
+            ?
+          </div>
+          <div
+            (click)="this.onClickBtnRight()"
+            class="key pointer bold"
+            i18n-title
+            title="no action available (unused)"
+          >
+            ?
+          </div>
+        </div>
+        <div class="pokedexRightScreenDisplay bgScreen">
+          <div class="content">
+            <p i18n>❓ Circle / Oval button</p>
+            <p i18n>- <span class="bold">grey</span>: enable TTS</p>
+            <p i18n>- <span class="bold">red</span>: back to pokedex list</p>
+            <p i18n>- <span class="bold">blue</span>: go to selected pokedex</p>
+            <br />
+            <p i18n>❓ Directional / Cross button</p>
+            <p i18n>- <span class="bold">top</span>: select previous pokemon</p>
+            <p i18n>- <span class="bold">bot</span>: select next pokemon</p>
+            <p i18n>
+              - <span class="bold">left</span>: previous sprite pokemon
+            </p>
+            <p i18n>- <span class="bold">right</span>: next sprite pokemon</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<ng-template #loadingData i18n>loadding data... </ng-template>

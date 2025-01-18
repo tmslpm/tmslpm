@@ -1,0 +1,8 @@
+<div class="wrapperNotification col-5">
+  <ng-container *ngFor="let v of this.notifications | keyvalue; index as i">
+    <div *ngIf="i < 5" class="notification" [class]="this.notificationType(v.value.type).toLocaleLowerCase()">
+      <p>{{ v.value.text }}</p>
+      <p (click)="this.onRemoveNotification(v.value.identifier)">🗙</p>
+    </div>
+  </ng-container>
+</div>

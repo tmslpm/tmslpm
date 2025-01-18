@@ -1,0 +1,21 @@
+{
+    "lang": "en",
+    "name": "Angular App - Pokedex by @tmslpm",
+    "short_name": "Angular-Pokedex",
+    "description": "Angular 17 project created for educational purposes to explore and learn the framework. It presents a functional Pokedex that connects to the pokeapi.co API. Two implementation are provided: one using the Fetch API in JavaScript and the other using Angular HttpClient module. Created by @tmslpm.",
+    "icons": [
+        {
+            "src": "/assets/img/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/img/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#ff3e4b",
+    "background_color": "#ffffff",
+    "display": "standalone"
+}
