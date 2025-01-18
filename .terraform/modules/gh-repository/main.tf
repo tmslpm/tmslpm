@@ -15,7 +15,7 @@ provider "github" {
 resource "github_repository" "tmslpm" {
   name        = var.github_repository_name
   description = "Repository managed by Terraform!"
-  topics      = ["terraform", "github", "cli"]
+  topics      = ["terraform", "github", "cli", "angular", "typescript"]
 
   is_template        = false
   has_wiki           = false
@@ -48,5 +48,11 @@ resource "github_repository" "tmslpm" {
 resource "github_repository_dependabot_security_updates" "tmslpm" {
   repository = var.github_repository_name
   enabled    = true
+}
+
+resource "github_branch" "subproject_branches" { 
+  repository    = var.github_repository_name
+  branch        = "branch-prod"
+  source_branch = "main"
 }
 
