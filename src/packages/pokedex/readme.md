@@ -28,6 +28,6 @@ Here are the features I implemented:
 
 I'm proud of what I've accomplished, and this experience really made me appreciate Angular. Check out the project in detail and let me know your thoughts!
 
-![pokedex preivew](/public/pokedex.png)
+![pokedex preivew](./public/pokedex.png)
 
 tmslpm -- 2023
