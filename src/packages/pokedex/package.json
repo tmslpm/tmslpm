@@ -1,0 +1,14 @@
+{
+  "name": "pokedex",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "license": "arr",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "echo \"target has no start\"",
+    "build": "echo \"target has no build\""
+  }
+}

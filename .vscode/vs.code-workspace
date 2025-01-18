@@ -1,0 +1,34 @@
+{
+  "folders": [
+    {
+      "name": "root",
+      "path": ".."
+    },
+    {
+      "name": "./src/packages/home",
+      "path": "../src/packages/home"
+    },
+    {
+      "name": "./src/packages/pokedex",
+      "path": "../src/packages/pokedex"
+    },
+    {
+      "name": "./src/packages/tilesmap",
+      "path": "../src/packages/tilesmap"
+    }
+  ],
+  "settings": {
+    "files.associations": {
+      "*.tfbackend": "terraform"
+    },
+    "files.exclude": {
+      "**/CODEOWNERS": true,
+      "**/license.md": true,
+      "**/**.tfstate.backup": true,
+      "**/.terraform.lock.hcl": false,
+      "**/.angular/**": true,
+      "**/package-lock.json": true
+    },
+    "liveServer.settings.multiRootWorkspaceName": "./src/packages/tilesmap",
+  }
+}

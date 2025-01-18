@@ -1,0 +1,25 @@
+{
+  "name": "tilesmap",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "license": "arr",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "echo \"target has no start\"",
+    "build": "webpack",
+    "dev": "webpack --watch"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.7",
+    "@types/webpack": "^5.28.5",
+    "copy-webpack-plugin": "^12.0.2",
+    "ts-loader": "^9.4.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3",
+    "webpack": "^5.87.0",
+    "webpack-cli": "^5.1.4"
+  }
+}

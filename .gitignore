@@ -1,11 +1,11 @@
-**/.terraform/.terraform/ 
-**/.terraform/*.config 
+**/.terraform/.terraform/
+**/.terraform/*.config
 *.tf.config
 *.tfbackend
 *.tfstate
 *.tfstate.*
 *.tfvars
-*.tfvars.json 
+*.tfvars.json
 *.log
 
 # Ignore override files as they are usually used to override resources locally and so
@@ -19,3 +19,53 @@ override.tf.json
 # Ignore CLI configuration files
 .terraformrc
 terraform.rc
+
+*.env
+.env
+.env.development.local
+.env.test.local
+.env.production.local
+.env.**
+
+**/.env
+**/.env.development.local
+**/.env.test.local
+**/.env.production.local
+**/.env.**
+
+# Compiled output
+**/dist
+**/tmp
+**/out-tsc
+**/bazel-out
+
+# Node
+node_modules
+**/node_modules
+**/npm-debug.log
+**/yarn-error.log
+
+# IDEs and editors
+**/.idea/
+**/.project
+**/.classpath
+**/.c9/
+**/*.launch
+**/.settings/
+**/*.sublime-workspace
+
+# Visual Studio Code
+**/.history/*
+
+# Miscellaneous
+**/.angular/cache
+**/.sass-cache/
+**/connect.lock
+**/coverage
+**/libpeerconnection.log
+**/testem.log
+**/typings
+
+# System files
+**/.DS_Store
+**/Thumbs.db

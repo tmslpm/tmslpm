@@ -1,0 +1,33 @@
+{
+  "name": "tmslpm",
+  "version": "1.0.0",
+  "license": "arr",
+  "description": "personal project",
+  "author": "tmslpm",
+  "private": true,
+  "homepage": "https://github.com/tmslpm/tmslpm#readme",
+  "bugs": {
+    "url": "https://github.com/tmslpm/tmslpm/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tmslpm/tmslpm.git"
+  },
+  "type": "commonjs",
+  "main": "console.log(\"root project has no main!\")",
+  "scripts": {
+    "readme": "echo \"before execute subproject, execute npm install\"",
+    "_start_": "__________________________________________________",
+    "start:home": "npm --prefix ./src/packages/home run start",
+    "start:pokedex": "npm --prefix ./src/packages/pokedex run start",
+    "start:tilesmap": "npm --prefix ./src/packages/tilesmap run start",
+    "start": "node -e \"const { spawn } = require('child_process');['./src/packages/home', './src/packages/pokedex', './src/packages/tilesmap'].forEach(p => { spawn('npm', ['run', 'start', '--prefix', p], { stdio: 'inherit', shell: true }); });\"",
+    "_build_": "__________________________________________________",
+    "build": "npm run build --workspaces"
+  },
+  "workspaces": [
+    "./src/packages/home",
+    "./src/packages/pokedex",
+    "./src/packages/tilesmap"
+  ]
+}
