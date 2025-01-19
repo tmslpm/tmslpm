@@ -39,7 +39,7 @@ jobs:
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com" 
           git fetch origin
-          git checkout branch-prod
+          git checkout -f branch-prod
           git add build/
           git commit -m "Add build artifacts from main"
           git merge main --no-ff -m "Merge main into branch-prod" 
