@@ -1,0 +1,46 @@
+name: Build and Deploy to branch-prod
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main branch
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: main
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20.13.0"
+
+      - name: Install and build
+        run: |
+          npm install
+          npm run build
+
+      - name: Move artifact to build directory
+        run: |
+          mkdir -p "./build/pokedex"
+          mv "./src/packages/pokedex/dist/pokedex/browser/"* "./build/pokedex"
+          
+          mkdir -p "./build/tilesmap"
+          mv "./src/packages/tilesmap/dist/"* "./build/tilesmap"
+          
+          mv "./src/packages/home/dist/home/browser/"* "./build"
+
+      - name: update
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com" 
+          git fetch origin
+          git checkout branch-prod
+          git add build/
+          git commit -m "Add build artifacts from main"
+          git merge main --no-ff -m "Merge main into branch-prod" 
+          git push origin branch-prod

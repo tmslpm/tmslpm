@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "homee": {
+    "home": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/homee",
+            "outputPath": "dist/home",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -64,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "homee:build:production"
+              "buildTarget": "home:build:production"
             },
             "development": {
-              "buildTarget": "homee:build:development"
+              "buildTarget": "home:build:development"
             }
           },
           "defaultConfiguration": "development"
