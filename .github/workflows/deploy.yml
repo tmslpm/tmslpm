@@ -1,9 +1,11 @@
 name: Build and Deploy to branch-prod
 on:
-  workflow_dispatch:
+  #workflow_dispatch:
   push:
     branches:
       - main
+    tags:
+      - 'deploy'
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -28,13 +30,11 @@ jobs:
         run: |
           mkdir -p "./build/pokedex"
           mv "./src/packages/pokedex/dist/pokedex/browser/"* "./build/pokedex"
-          
           mkdir -p "./build/tilesmap"
           mv "./src/packages/tilesmap/dist/"* "./build/tilesmap"
-          
           mv "./src/packages/home/dist/home/browser/"* "./build"
 
-      - name: update
+      - name: Update branch-prod
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com" 
