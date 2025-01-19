@@ -25,7 +25,7 @@
         <a title="Click to open and view my github repositories" alt="open url github.com/tmslpm?tab=repositories" href="https://github.com/tmslpm?tab=repositories">my repositories</a>  
       </h3> 
       <div style="text-align:center" align="center">
-        <a href="https://github.com/tmslpm/portfolio" align="center" title="Click to open and view the repositorie: Portfolio" alt="open url github.com/tmslpm/portfolio">
+        <a href="https://github.com/tmslpm/tmslpm" align="center" title="Click to open and view the repositorie: Portfolio" alt="open url github.com/tmslpm/portfolio">
           <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=tmslpm&repo=tmslpm&border_radius=0&theme=transparent" />
         </a> 
       </div> 
