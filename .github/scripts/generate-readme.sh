@@ -1,7 +1,7 @@
 #!/bin/bash
 declare -r day_of_week=$(date "+%u")
 declare -r usr="<a href=\"https://github.com/tmslpm/tmslpm\">~/github/tmslpm</a>"
-declare output="$ <a href=\"./.github/scripts/generate-readme.sh\">./.github/scripts/generate-readme.sh</a>\n"
+declare output="$ <a href=\"https://github.com/tmslpm/tmslpm/blob/main/.github/scripts/generate-readme.sh\">./.github/scripts/generate-readme.sh</a>\n"
 
 log() {
   for arg in "$@"; do
