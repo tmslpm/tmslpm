@@ -23,7 +23,9 @@
     "start:tilesmap": "npm --prefix ./src/packages/tilesmap run start",
     "start": "node -e \"const { spawn } = require('child_process');['./src/packages/home', './src/packages/pokedex', './src/packages/tilesmap'].forEach(p => { spawn('npm', ['run', 'start', '--prefix', p], { stdio: 'inherit', shell: true }); });\"",
     "_build_": "__________________________________________________",
-    "build": "npm run build --workspaces"
+    "build": "npm run build --workspaces",
+    "_other_": "__________________________________________________",
+    "test:gen:readme": "sh .github/scripts/gen.sh"
   },
   "workspaces": [
     "./src/packages/home",

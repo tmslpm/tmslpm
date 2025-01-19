@@ -1,0 +1,37 @@
+.wrapperNotification {
+  --wrapperNotif-padding: 5px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 9999;
+  padding: 0 var(--wrapperNotif-padding);
+
+  .notification {
+    display: inline-flex;
+    width: 100%;
+    padding: var(--wrapperNotif-padding) 10px;
+    margin-bottom: var(--wrapperNotif-padding);
+    backdrop-filter: blur(10px);
+
+    :last-child {
+      cursor: pointer;
+      margin-left: auto;
+      color: var(--color-love);
+    }
+
+    &.info {
+      background-color: rgba(var(--rgb-blue), 0.3);
+      border-left: 4px solid rgba(var(--rgb-blue), 0.5);
+    }
+
+    &.warn {
+      background-color: rgba(var(--rgb-yellow), 0.2);
+      border-left: 4px solid rgba(var(--rgb-yellow), 0.5);
+    }
+
+    &.error {
+      background-color: rgba(var(--rgb-red), 0.2);
+      border-left: 4px solid rgba(var(--rgb-red), 0.3);
+    }
+  }
+}

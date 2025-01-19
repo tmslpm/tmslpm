@@ -1,14 +1,41 @@
 {
   "name": "pokedex",
   "version": "1.0.0",
-  "private": true,
-  "description": "",
-  "license": "arr",
-  "author": "",
-  "type": "commonjs",
-  "main": "index.js",
   "scripts": {
-    "start": "echo \"target has no start\"",
-    "build": "echo \"target has no build\""
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build --localize --optimization --base-href /dist/browser/",
+    "github_build": "ng build --localize --optimization --base-href /angular-pokedex/",
+    "watch": "ng build --watch --localize --configuration development --base-href /dist/browser/",
+    "test": "ng test",
+    "extract_i18n": "ng extract-i18n --format json --output-path src/locale"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "^18.2.0",
+    "@angular/common": "^18.2.0",
+    "@angular/compiler": "^18.2.0",
+    "@angular/core": "^18.2.0",
+    "@angular/forms": "^18.2.0",
+    "@angular/platform-browser": "^18.2.0",
+    "@angular/platform-browser-dynamic": "^18.2.0",
+    "@angular/router": "^18.2.0",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.14.10"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^18.2.7",
+    "@angular/cli": "^18.2.7",
+    "@angular/compiler-cli": "^18.2.0",
+    "@angular/localize": "^18.2.13",
+    "@types/jasmine": "~5.1.0",
+    "jasmine-core": "~5.2.0",
+    "karma": "~6.4.0",
+    "karma-chrome-launcher": "~3.2.0",
+    "karma-coverage": "~2.2.0",
+    "karma-jasmine": "~5.1.0",
+    "karma-jasmine-html-reporter": "~2.1.0",
+    "typescript": "~5.5.2"
   }
 }

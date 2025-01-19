@@ -27,4 +27,4 @@ from a complete rewrite. If I had more time, I would do it, but I have other pro
 
 See the [license.md](./license.md)
 
-<pre align=center>↑↑↑ <a href="#tilemap-generator" title="click to scroll up" alt="click to scroll up">BACK TO TOP</a> ↑↑↑</pre>
+<pre align=center>↑↑↑ <a href="#tilemap-generator-click-here-to-try-the-editor" title="click to scroll up" alt="click to scroll up">BACK TO TOP</a> ↑↑↑</pre>

@@ -1,0 +1,10 @@
+<a href="javascript:void(0);" class="pointer floatRight dropdown">
+  <i class="material-symbols-outlined pointer">translate</i>{{ this.currentLang.name }}
+  <div class="dropdownContent fixDropdown">
+    <ng-container *ngFor="let lang of this.langs">
+      <a *ngIf="this.currentLang.locale !== lang.locale" href="../{{ lang.locale }}/{{ this.currentLocationHash }}">
+        {{ lang.name }}
+      </a>
+    </ng-container>
+  </div>
+</a>

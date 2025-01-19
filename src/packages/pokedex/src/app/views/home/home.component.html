@@ -1,0 +1,78 @@
+<div class="col-12">
+  <div class="col-8">
+    <section class="col-12">
+      <h1 i18n>Welcome to the homepage of my Pokedex project!</h1>
+    </section>
+    <section class="col-12 padding1">
+      <p i18n>
+        Here, you'll discover the result of my frontend development work with
+        <a class="love" href="https://angular.io/" target="_blank" rel="noopener noreferrer" i18n-title
+          title="Open Angular Website">Angular 17</a>, using TypeScript and Sass. My main goal is to enhance my skills
+        with
+        the Angular framework by creating a functional version of the renowned
+        Pokedex.
+      </p>
+    </section>
+    <section class="col-12 padding1">
+      <p i18n>
+        At the core of this project, you'll find two versions of the Pokedex.
+        The first one relies on the efficiency of JavaScript Fetch API, while
+        the second leverages Angular HttpClient module for a more integrated
+        approach. To obtain the data, I set up a connection with a remote API at
+        the address at
+        <a class="love" href="https://pokeapi.co" target="_blank" i18n-title
+          title="Open PokeApi Website">pokeapi.co</a>.
+      </p>
+    </section>
+    <section class="col-12 padding1">
+      <p i18n>
+        Explore this page to learn more about how I tackled this exciting
+        challenge and the features I've incorporated into my Pokedex. Enjoy your
+        exploration!
+      </p>
+    </section>
+    <section class="col-12 padding1">
+      <p i18n>Have a nice day !! 👻</p>
+    </section>
+    <section class="col-12 padding1">
+      <hr />
+      <p style="font-size: larger" i18n>
+        <a class="love" href="https://pokeapi.co/" target="_blank" i18n-title
+          title="Open PokeApi Website">pokeapi.co</a>
+        statut HTTP:
+        <ng-container *ngIf="this.pokeApiAvailable == true; else waitingResponse">
+          200 ok
+        </ng-container>
+        <ng-template #waitingResponse> waiting response... </ng-template>
+      </p>
+    </section>
+  </div>
+  <div class="col-4">
+    <div class="col-12 textCenter padding1">
+      <a href="https://angular.io/" target="_blank" rel="noopener noreferrer" i18n-title title="Open Angular Website">
+        <img src="img/angular.png" alt="Angular Framework Logo" width="158px" height="158px" />
+      </a>
+    </div>
+    <div class="col-12 textCenter">
+      <a href="https://angular.io/" target="_blank" rel="noopener noreferrer" i18n-title title="Open Angular Website">
+        <img src="img/angular-cli.png" alt="Angular CLI Logo" width="128px" height="128px" class="marging1" />
+      </a>
+      <a href="https://angular.io/" target="_blank" rel="noopener noreferrer" i18n-title title="Open Angular Website">
+        <img src="img/angular-http.png" alt="Angular Http Logo" width="128px" height="128px"
+          class="marging1" />
+      </a>
+    </div>
+    <div class="col-12 textCenter padding1">
+      <a href="https://www.typescriptlang.org/" target="_blank" rel="noopener noreferrer" i18n-title
+        title="Open Typescript Website">
+        <img src="img/ts-logo.png" alt="Angular Framework Logo" width="128px" />
+      </a>
+    </div>
+    <div class="col-12 textCenter padding1">
+      <a href="https://sass-lang.com/" target="_blank" rel="noopener noreferrer" i18n-title
+        title="Open Sass/Scss Website">
+        <img src="img/sass-logo.png" alt="Angular Framework Logo" width="200px" />
+      </a>
+    </div>
+  </div>
+</div>

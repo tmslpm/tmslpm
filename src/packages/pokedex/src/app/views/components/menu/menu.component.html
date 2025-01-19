@@ -1,0 +1,10 @@
+<nav #MenuHeaderRef class="col-12" [ngClass]="{ responsive: this.expand }">
+  <a *ngFor="let link of menu" routerLink="{{ link.path }}" ariaCurrentWhenActive="page"
+    (click)="this.onExpandMenu(true)">
+    <i class="material-symbols-outlined">apps</i>
+    <span>{{ link.title }}</span>
+  </a>
+  <btn-switch-theme></btn-switch-theme>
+  <btn-switch-lang></btn-switch-lang>
+  <b class="icon" (click)="this.onExpandMenu()"><i class="material-symbols-outlined">expand</i></b>
+</nav>
