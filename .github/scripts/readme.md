@@ -1,8 +1,3 @@
-<div style="text-align:center" align="center">
-<h3>Welcome, my name is Thomas !</h3>
-<p>I love writing code.</p>
-</div>
-
 <table style="text-align:center" align="center"> 
   <tr>
     <td>

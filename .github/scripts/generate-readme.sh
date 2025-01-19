@@ -57,7 +57,9 @@ generateDependencies() {
 }
 
 main() {
-  log "Hello World 🎉" "Debugging spaghetti code... 🍝 In progress..."
+  log "Hello World 🎉 Welcome!" 
+  logFollow "My name is Thomas ! I love writing code."
+  log "Debugging spaghetti code... 🍝 In progress..."
   generateDependencies
   generateLoadingCat
   generateJoke
