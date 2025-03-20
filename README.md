@@ -17,7 +17,6 @@ and 7039 more lines hidden...
  <ul> 
  <li>🔭 I’m currently working on Minecraft mod development</li>
  <li>🌱 I’m currently learning OpenGL (with LWJGL)</li>
- <li>📫 How to reach me: email or linkedin</li>
  </ul>
  </td>
  <td>
