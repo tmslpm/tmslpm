@@ -1,3 +1,14 @@
+/** 
+ *   # material-icon-theme custom clones generator
+ * 
+ *   TypeScript script to generate custom file icon clones 
+ *   config for the VS Code Material Icon Theme extension. 
+ *   Detects duplicate names and extensions at runtime.
+ *   
+ *   ```bash
+ *   bun run material-icon.script.ts  
+ *   ``` 
+ */
 const WRITE_TO_FILE: boolean = true;
 const CONFIG_PREFIX: string = "tms";
 const CONFIG_CLONE: [FnCreate, ...{ names: string[], color: string }[]][] = [
