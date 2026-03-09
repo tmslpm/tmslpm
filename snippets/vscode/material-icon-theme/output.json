@@ -1,0 +1,368 @@
+{
+  "material-icon-theme.files.customClones": [
+    {
+      "name": "tms-helloworld-css",
+      "base": "css",
+      "color": "blue-700",
+      "fileExtensions": [
+        "helloworld.css"
+      ]
+    },
+    {
+      "name": "tms-bun-bun-ts",
+      "base": "bun",
+      "color": "blue-500",
+      "fileExtensions": [
+        "bun.ts"
+      ]
+    },
+    {
+      "name": "tms-type-ts-json",
+      "base": "json",
+      "color": "blue-400",
+      "fileExtensions": [
+        "type.json"
+      ]
+    },
+    {
+      "name": "tms-type-ts",
+      "base": "typescript",
+      "color": "blue-400",
+      "fileExtensions": [
+        "type.ts",
+        "type.mts",
+        "type.cts",
+        "type.tsx",
+        "type.d.ts",
+        "type.d.mts",
+        "type.d.cts"
+      ]
+    },
+    {
+      "name": "tms-type-ts-test",
+      "base": "test-ts",
+      "color": "blue-400",
+      "fileExtensions": [
+        "type.test.ts",
+        "type.test.mts",
+        "type.test.cts",
+        "type.test.tsx"
+      ]
+    },
+    {
+      "name": "tms-function-ts-json",
+      "base": "json",
+      "color": "lime-700",
+      "fileExtensions": [
+        "function.json",
+        "func.json",
+        "fn.json",
+        "helper.json"
+      ]
+    },
+    {
+      "name": "tms-function-ts",
+      "base": "typescript",
+      "color": "lime-700",
+      "fileExtensions": [
+        "function.ts",
+        "function.mts",
+        "function.cts",
+        "function.tsx",
+        "function.d.ts",
+        "function.d.mts",
+        "function.d.cts",
+        "func.ts",
+        "func.mts",
+        "func.cts",
+        "func.tsx",
+        "func.d.ts",
+        "func.d.mts",
+        "func.d.cts",
+        "fn.ts",
+        "fn.mts",
+        "fn.cts",
+        "fn.tsx",
+        "fn.d.ts",
+        "fn.d.mts",
+        "fn.d.cts",
+        "helper.ts",
+        "helper.mts",
+        "helper.cts",
+        "helper.tsx",
+        "helper.d.ts",
+        "helper.d.mts",
+        "helper.d.cts"
+      ]
+    },
+    {
+      "name": "tms-function-ts-test",
+      "base": "test-ts",
+      "color": "lime-700",
+      "fileExtensions": [
+        "function.test.ts",
+        "function.test.mts",
+        "function.test.cts",
+        "function.test.tsx",
+        "func.test.ts",
+        "func.test.mts",
+        "func.test.cts",
+        "func.test.tsx",
+        "fn.test.ts",
+        "fn.test.mts",
+        "fn.test.cts",
+        "fn.test.tsx",
+        "helper.test.ts",
+        "helper.test.mts",
+        "helper.test.cts",
+        "helper.test.tsx"
+      ]
+    },
+    {
+      "name": "tms-class-ts-json",
+      "base": "json",
+      "color": "green-600",
+      "fileExtensions": [
+        "class.json"
+      ]
+    },
+    {
+      "name": "tms-class-ts",
+      "base": "typescript",
+      "color": "green-600",
+      "fileExtensions": [
+        "class.ts",
+        "class.mts",
+        "class.cts",
+        "class.tsx",
+        "class.d.ts",
+        "class.d.mts",
+        "class.d.cts"
+      ]
+    },
+    {
+      "name": "tms-class-ts-test",
+      "base": "test-ts",
+      "color": "green-600",
+      "fileExtensions": [
+        "class.test.ts",
+        "class.test.mts",
+        "class.test.cts",
+        "class.test.tsx"
+      ]
+    },
+    {
+      "name": "tms-entity-ts-json",
+      "base": "json",
+      "color": "indigo-400",
+      "fileExtensions": [
+        "entity.json"
+      ]
+    },
+    {
+      "name": "tms-entity-ts",
+      "base": "typescript",
+      "color": "indigo-400",
+      "fileExtensions": [
+        "entity.ts",
+        "entity.mts",
+        "entity.cts",
+        "entity.tsx",
+        "entity.d.ts",
+        "entity.d.mts",
+        "entity.d.cts"
+      ]
+    },
+    {
+      "name": "tms-entity-ts-test",
+      "base": "test-ts",
+      "color": "indigo-400",
+      "fileExtensions": [
+        "entity.test.ts",
+        "entity.test.mts",
+        "entity.test.cts",
+        "entity.test.tsx"
+      ]
+    },
+    {
+      "name": "tms-repository-ts-json",
+      "base": "json",
+      "color": "green-500",
+      "fileExtensions": [
+        "repository.json",
+        "repos.json"
+      ]
+    },
+    {
+      "name": "tms-repository-ts",
+      "base": "typescript",
+      "color": "green-500",
+      "fileExtensions": [
+        "repository.ts",
+        "repository.mts",
+        "repository.cts",
+        "repository.tsx",
+        "repository.d.ts",
+        "repository.d.mts",
+        "repository.d.cts",
+        "repos.ts",
+        "repos.mts",
+        "repos.cts",
+        "repos.tsx",
+        "repos.d.ts",
+        "repos.d.mts",
+        "repos.d.cts"
+      ]
+    },
+    {
+      "name": "tms-repository-ts-test",
+      "base": "test-ts",
+      "color": "green-500",
+      "fileExtensions": [
+        "repository.test.ts",
+        "repository.test.mts",
+        "repository.test.cts",
+        "repository.test.tsx",
+        "repos.test.ts",
+        "repos.test.mts",
+        "repos.test.cts",
+        "repos.test.tsx"
+      ]
+    },
+    {
+      "name": "tms-enum-ts-json",
+      "base": "json",
+      "color": "teal-500",
+      "fileExtensions": [
+        "enum.json"
+      ]
+    },
+    {
+      "name": "tms-enum-ts",
+      "base": "typescript",
+      "color": "teal-500",
+      "fileExtensions": [
+        "enum.ts",
+        "enum.mts",
+        "enum.cts",
+        "enum.tsx",
+        "enum.d.ts",
+        "enum.d.mts",
+        "enum.d.cts"
+      ]
+    },
+    {
+      "name": "tms-enum-ts-test",
+      "base": "test-ts",
+      "color": "teal-500",
+      "fileExtensions": [
+        "enum.test.ts",
+        "enum.test.mts",
+        "enum.test.cts",
+        "enum.test.tsx"
+      ]
+    },
+    {
+      "name": "tms-service-ts-json",
+      "base": "json",
+      "color": "yellow-600",
+      "fileExtensions": [
+        "service.json",
+        "singleton.json",
+        "controller.json"
+      ]
+    },
+    {
+      "name": "tms-service-ts",
+      "base": "typescript",
+      "color": "yellow-600",
+      "fileExtensions": [
+        "service.ts",
+        "service.mts",
+        "service.cts",
+        "service.tsx",
+        "service.d.ts",
+        "service.d.mts",
+        "service.d.cts",
+        "singleton.ts",
+        "singleton.mts",
+        "singleton.cts",
+        "singleton.tsx",
+        "singleton.d.ts",
+        "singleton.d.mts",
+        "singleton.d.cts",
+        "controller.ts",
+        "controller.mts",
+        "controller.cts",
+        "controller.tsx",
+        "controller.d.ts",
+        "controller.d.mts",
+        "controller.d.cts"
+      ]
+    },
+    {
+      "name": "tms-service-ts-test",
+      "base": "test-ts",
+      "color": "yellow-600",
+      "fileExtensions": [
+        "service.test.ts",
+        "service.test.mts",
+        "service.test.cts",
+        "service.test.tsx",
+        "singleton.test.ts",
+        "singleton.test.mts",
+        "singleton.test.cts",
+        "singleton.test.tsx",
+        "controller.test.ts",
+        "controller.test.mts",
+        "controller.test.cts",
+        "controller.test.tsx"
+      ]
+    },
+    {
+      "name": "tms-schema-ts-json",
+      "base": "json",
+      "color": "red-400",
+      "fileExtensions": [
+        "schema.json",
+        "schem.json"
+      ]
+    },
+    {
+      "name": "tms-schema-ts",
+      "base": "typescript",
+      "color": "red-400",
+      "fileExtensions": [
+        "schema.ts",
+        "schema.mts",
+        "schema.cts",
+        "schema.tsx",
+        "schema.d.ts",
+        "schema.d.mts",
+        "schema.d.cts",
+        "schem.ts",
+        "schem.mts",
+        "schem.cts",
+        "schem.tsx",
+        "schem.d.ts",
+        "schem.d.mts",
+        "schem.d.cts"
+      ]
+    },
+    {
+      "name": "tms-schema-ts-test",
+      "base": "test-ts",
+      "color": "red-400",
+      "fileExtensions": [
+        "schema.test.ts",
+        "schema.test.mts",
+        "schema.test.cts",
+        "schema.test.tsx",
+        "schem.test.ts",
+        "schem.test.mts",
+        "schem.test.cts",
+        "schem.test.tsx"
+      ]
+    }
+  ]
+}
