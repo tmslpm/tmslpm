@@ -1,0 +1,5 @@
+:crescent_moon: Somewhere between a bug and a dream
+:ghost: The codebase is quiet... too quiet
+:stars: Compiling thoughts at 3am
+:zzz: git commit -m "probably a mistake"
+:owl: Stack Overflow never sleeps

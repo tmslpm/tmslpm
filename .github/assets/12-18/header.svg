@@ -1,0 +1,27 @@
+<svg viewBox="0 0 800 140" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-opacity="0.25" />
+    </filter>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" />
+    </filter>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#6ec6ff" />
+      <stop offset="100%" stop-color="#bfe9ff" />
+    </linearGradient>
+  </defs>
+  <g filter="url(#shadow)">
+    <rect width="800" height="140" rx="20" fill="url(#sky)" />
+  </g>
+  <g filter="url(#glow)">
+    <circle cx="650" cy="40" r="28" fill="#fff4a3">
+      <animate attributeName="r" values="28;30;28" dur="10s" repeatCount="indefinite" />
+    </circle>
+  </g>
+  <g stroke="#fff4a3" stroke-width="1.5" opacity="0.4">
+    <line x1="650" y1="5" x2="650" y2="0" />
+    <line x1="680" y1="20" x2="690" y2="10" />
+    <line x1="620" y1="20" x2="610" y2="10" />
+  </g>
+</svg>
