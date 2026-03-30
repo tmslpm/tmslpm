@@ -1,0 +1,5 @@
+
+This favicon was generated using the following font:
+- Font Author: https://github.com/googlefonts
+- Font Source: https://github.com/googlefonts/alumni
+- Font License: OFL-1.1 license
