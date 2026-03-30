@@ -1,5 +1,0 @@
-:city_sunset: Pushing last commits of the day
-:couch_and_lamp: Switching to couch mode
-:video_game: Alt+F4 on work, Alt+F4 on life
-:tada: Survived another day
-:beers: Debugging with friends
