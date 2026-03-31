@@ -10,15 +10,6 @@
     <circle id="d3" fill="#aabfff" r="0.7">
       <animate attributeName="opacity" values="0.2;1;0.2" dur="7s" repeatCount="indefinite" />
     </circle>
-    <circle id="c1" fill="#ffffff" r="1.5">
-      <animate attributeName="opacity" values="0.3;1;0.3" dur="3s" repeatCount="indefinite" />
-    </circle>
-    <circle id="c2" fill="#ffffff" r="1.6">
-      <animate attributeName="opacity" values="0.2;1;0.2" dur="3.5s" repeatCount="indefinite" />
-    </circle>
-    <circle id="c3" fill="#ffffff" r="1.8">
-      <animate attributeName="opacity" values="1;0.2;1" dur="4s" repeatCount="indefinite" />
-    </circle>
   </defs>
   <rect width="800" height="20" rx="6" ry="6" fill="#03030a" />
   <use href="#d2" x="40"  y="10" />
@@ -31,7 +22,4 @@
   <use href="#d1" x="540" y="3"  />
   <use href="#d3" x="620" y="17" />
   <use href="#d2" x="700" y="7"  />
-  <use href="#c1" x="150" y="11" />
-  <use href="#c3" x="400" y="12" />
-  <use href="#c2" x="680" y="6"  />
 </svg>
