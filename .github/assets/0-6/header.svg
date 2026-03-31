@@ -1,8 +1,6 @@
-<svg viewBox="0 -10 800 160" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 800 140" xmlns="http://www.w3.org/2000/svg">
+  <!-- @tmslpm - https://github.com/tmslpm - All Right Reserved -->
   <defs>
-    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.6" />
-    </filter>
     <filter id="glow">
       <feGaussianBlur stdDeviation="1.2" result="b" />
       <feMerge>
@@ -10,31 +8,37 @@
         <feMergeNode in="SourceGraphic" />
       </feMerge>
     </filter>
-  </defs>
-  <g filter="url(#shadow)">
-    <rect width="800" height="140" rx="20" ry="20" fill="#03030a" />
-  </g>
-  <g fill="#aabfff">
-    <circle cx="40" cy="30" r="0.6" />
-    <circle cx="80" cy="90" r="0.5" />
-    <circle cx="140" cy="60" r="0.7" />
-    <circle cx="220" cy="20" r="0.6" />
-    <circle cx="300" cy="100" r="0.5" />
-    <circle cx="380" cy="50" r="0.7" />
-    <circle cx="460" cy="80" r="0.6" />
-    <circle cx="540" cy="40" r="0.5" />
-    <circle cx="620" cy="70" r="0.7" />
-    <circle cx="700" cy="30" r="0.6" />
-  </g>
-  <g fill="#ffffff" filter="url(#glow)">
-    <circle cx="150" cy="40" r="1.5">
+    <circle id="d1" fill="#aabfff" r="0.5" >
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="5s" repeatCount="indefinite" />
+    </circle>
+    <circle id="d2" fill="#aabfff" r="0.6" >
+      <animate attributeName="opacity" values="1;0.2;1" dur="6s" repeatCount="indefinite" />
+    </circle>
+    <circle id="d3" fill="#aabfff" r="0.7" >
+      <animate attributeName="opacity" values="0.2;1;0.2" dur="7s" repeatCount="indefinite" />
+    </circle>
+    <circle id="c1" fill="#ffffff" r="1.5">
       <animate attributeName="opacity" values="0.3;1;0.3" dur="3s" repeatCount="indefinite" />
     </circle>
-    <circle cx="400" cy="90" r="1.8">
+    <circle id="c2" fill="#ffffff" r="1.6">
       <animate attributeName="opacity" values="1;0.2;1" dur="2.5s" repeatCount="indefinite" />
     </circle>
-    <circle cx="680" cy="60" r="1.6">
+    <circle id="c3" fill="#ffffff" r="1.8">
       <animate attributeName="opacity" values="0.2;1;0.2" dur="4s" repeatCount="indefinite" />
     </circle>
-  </g>
+  </defs>
+  <rect width="800" height="140" rx="20" ry="20" fill="#03030a" />
+  <use href="#d2" x="40"  y="30" />
+  <use href="#d1" x="80"  y="90" />
+  <use href="#d3" x="140" y="60" />
+  <use href="#d2" x="220" y="20" />
+  <use href="#d1" x="300" y="100" />
+  <use href="#d3" x="380" y="50" />
+  <use href="#d2" x="460" y="80" />
+  <use href="#d1" x="540" y="40" />
+  <use href="#d3" x="620" y="70" />
+  <use href="#d2" x="700" y="30"  />
+  <use href="#c1" x="150" y="40" />
+  <use href="#c2" x="400" y="90" />
+  <use href="#c3" x="680" y="60" />
 </svg>
