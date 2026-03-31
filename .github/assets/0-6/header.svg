@@ -1,7 +1,7 @@
-<svg viewBox="0 -5 800 150" style="background:#fff" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 -10 800 160" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="2" stdDeviation="6" flood-opacity="0.6" />
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.6" />
     </filter>
     <filter id="glow">
       <feGaussianBlur stdDeviation="1.2" result="b" />
