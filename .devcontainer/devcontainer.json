@@ -1,4 +1,17 @@
 {
-	"name": "Ubuntu",
-	"image": "mcr.microsoft.com/devcontainers/base:noble"
+	"name": "tmslpm dev container",
+	"image": "mcr.microsoft.com/devcontainers/base:noble",
+	"features": {
+		"ghcr.io/devcontainers/features/common-utils": {
+			"installZsh": true,
+			"configureZshAsDefaultShell": true
+		}
+	},
+	"customizations": {
+		"codespaces": {
+			"openFiles": [
+				"README.md"
+			]
+		}
+	}
 }
