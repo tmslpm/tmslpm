@@ -1,0 +1,38 @@
+
+Credits
+
+    Giscus & Github Discussions
+
+        The comments system powered by Giscus with GitHub Discussions.
+ 
+        - Author: https://github.com/giscus
+        - Source: https://github.com/giscus/giscus
+        - License: https://raw.githubusercontent.com/giscus/giscus/refs/heads/main/LICENSE
+  
+    -------------------------------------------------------------
+
+    Website Favicon
+
+        The favicon was generated using googlefonts/alumni:
+
+        - Author: https://github.com/googlefonts
+        - Source: https://github.com/googlefonts/alumni
+        - License: OFL-1.1 license
+
+    -------------------------------------------------------------
+
+    Icon SVG LinkedIn 
+
+        The icon from official branding.
+
+        - Brand Source: https://brand.linkedin.com
+
+    -------------------------------------------------------------
+
+    Icon SVG Stack Overflow 
+    
+        The icon from official branding.
+
+        - Brand Source: https://stackoverflow.design/brand/logo
+
+    -------------------------------------------------------------

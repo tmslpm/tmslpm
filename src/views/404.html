@@ -1,7 +1,5 @@
 <html lang="en">
-
 <head>
-    <base href="/" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>@tmslpm</title>
@@ -22,18 +20,16 @@
     <meta name="description" content="coming soon" />
     <link rel="manifest" href="site.webmanifest" />
     <meta name="theme-color" content="#ff3e4b" />
-    <style>
-        body {
-            background: #333;
-            color: #fff;
-        }
-    </style>
+    m8_partial([inline-styles/critical.inline-style.html])
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-    <h1>coming soon</h1>
-
+    m8_partial([header/header.m4.html])
+    <main>
+        <section>
+            <h2>404 Not Found :(</h2>
+        </section>
+    </main>
+    m8_partial([footer/footer.m4.html])
 </body>
-
 </html>

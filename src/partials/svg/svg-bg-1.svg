@@ -1,0 +1,155 @@
+<svg 
+    xmlns="http://www.w3.org/2000/svg" 
+    viewBox="-500 -500 1000 1000" 
+    preserveAspectRatio="xMidYMid slice">
+    <defs>
+        <circle 
+            id="x" 
+            r="1" 
+            fill="var(--s-primary, #333)" />
+        <circle 
+            id="y" 
+            r="1" 
+            fill="var(--s-seconday, #fff)" />
+    </defs>
+    <use 
+        href="#x" 
+        transform="rotate(22)">
+        <animateTransform 
+            attributeName="transform" 
+            values="0,0;550,0" 
+            dur="1.9s" 
+            repeatCount="indefinite" 
+            additive="sum" />
+    </use>
+    <use 
+        href="#y" 
+        transform="rotate(45)">
+        <animateTransform 
+            attributeName="transform" 
+            values="0,0;560,0" 
+            dur="2.6s" 
+            repeatCount="indefinite" 
+            additive="sum" />
+    </use>
+    <use 
+        href="#x" 
+        transform="rotate(68)">
+        <animateTransform 
+            attributeName="transform" 
+            values="0,0;510,0" 
+            dur="2.1s" 
+            repeatCount="indefinite" 
+            additive="sum" />
+    </use>
+    <use 
+        href="#y" 
+        transform="rotate(90)">
+        <animateTransform 
+            attributeName="transform" 
+            values="0,0;575,0" 
+            dur="2.4s" 
+            repeatCount="indefinite" 
+            additive="sum" />
+    </use>
+    <use 
+        href="#x" 
+        transform="rotate(112)">
+        <animateTransform 
+            attributeName="transform" 
+            values="0,0;595,0" 
+            dur="1.8s" 
+            repeatCount="indefinite" 
+            additive="sum" />
+    </use>
+    <use 
+        href="#y" 
+        transform="rotate(135)">
+        <animateTransform 
+            attributeName="transform" 
+            values="0,0;655,0" 
+            dur="2.7s" 
+            repeatCount="indefinite" 
+            additive="sum" />
+    </use>
+    <use 
+        href="#x" 
+        transform="rotate(158)">
+        <animateTransform 
+            attributeName="transform" 
+            values="0,0;515,0" 
+            dur="2.2s" 
+            repeatCount="indefinite" 
+            additive="sum" />
+    </use>
+    <use 
+        href="#y" 
+        transform="rotate(180)">
+        <animateTransform 
+            attributeName="transform" 
+            values="0,0;580,0" 
+            dur="2.3s" 
+            repeatCount="indefinite" 
+            additive="sum" />
+    </use>
+    <use 
+        href="#x" 
+        transform="rotate(202)">
+        <animateTransform 
+            attributeName="transform" 
+            values="0,0;550,0" 
+            dur="2.0s" 
+            repeatCount="indefinite" 
+            additive="sum" />
+    </use>
+    <use 
+        href="#y" 
+        transform="rotate(225)">
+        <animateTransform 
+            attributeName="transform" 
+            values="0,0;560,0" 
+            dur="2.5s" 
+            repeatCount="indefinite" 
+            additive="sum" />
+    </use>
+    <use 
+        href="#x" 
+        transform="rotate(248)">
+        <animateTransform 
+            attributeName="transform" 
+            values="0,0;505,0" 
+            dur="1.9s" 
+            repeatCount="indefinite" 
+            additive="sum" />
+    </use>
+    <use 
+        href="#y" 
+        transform="rotate(270)">
+        <animateTransform 
+            attributeName="transform" 
+            values="0,0;575,0" 
+            dur="2.3s" 
+            repeatCount="indefinite" 
+            additive="sum" />
+    </use>
+    <use 
+        href="#x" 
+        transform="rotate(338)">
+        <animateTransform 
+            attributeName="transform" 
+            values="0,0;598,0" 
+            dur="2.0s" 
+            repeatCount="indefinite" 
+            additive="sum" />
+    </use>
+    <use 
+        href="y" 
+        transform="rotate(315)">
+        <animateTransform 
+            attributeName="transform" 
+            values="0,0;535,0" 
+            dur="2.6s" 
+            repeatCount="indefinite" 
+            additive="sum" />
+    </use>
+</svg>

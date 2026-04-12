@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-    <base href="/" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="refresh" content="0;URL='https://stackoverflow.com/users/15173048/tmslpm'">
@@ -24,62 +23,10 @@
     <meta name="description" content="coming soon" />
     <link rel="manifest" href="site.webmanifest" />
     <meta name="theme-color" content="#ff3e4b" />
-    <style>
-        :root {
-            --s-seconda: #ebebeb;
-            --s-primary: #ff5e00;
-            background: #111;
-            color: var(--s-seconda);
-            font-family: system-ui, sans-serif;
-        }
-
-        * { margin: 0; padding: 0; }
-        html, body { width: 100%; height: 100% }
-
-        body, main, .wrapper-img {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            gap: 17px;
-        }
-
-        footer {
-            font-size: 12px;
-            letter-spacing: 0.08em;
-            opacity: 0.5;
-        }
-
-        svg {
-            z-index: -1;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 100%;
-            height: 100%;
-        }
-
-        .wrapper-img {
-            background: color-mix(in srgb, var(--s-primary) 5%, transparent);
-            border: 1px solid color-mix(in srgb, var(--s-primary) 35%, transparent);
-            border-radius: 21px;
-            padding: 9px;
-        }
- 
-        a { color: var(--s-primary); font-weight: 700; text-decoration: none; border-bottom: 1px solid var(--s-primary) } 
-        img { filter: drop-shadow(0 0 16px color-mix(in srgb, var(--s-primary) 65%, transparent)) }
-        h1 { font-size: 21px; font-weight: 500 }
-        h1 span:nth-of-type(1) { animation: t1 1.8s ease-in-out infinite }
-        h1 span:nth-of-type(2) { animation: t2 1.8s ease-in-out infinite } 
-        h1 span:nth-of-type(3) { animation: t3 1.8s ease-in-out infinite } 
-        @keyframes t1 { 0% { olor: var(--s-primary) } 20%, 100% { color: inherit } } 
-        @keyframes t2 { 0%, 20% { color: inherit } 40% { olor: var(--s-primary) } 60%, 100% { color: inherit } } 
-        @keyframes t3 { 0%, 60% { color: inherit }  80% { olor: var(--s-primary) } 100% { color: inherit } }
-    </style>
+    m8_partial([inline-styles/redirect.inline-style.html])
 </head>
 
-<body>
+<body style="--s-seconda: #ebebeb;--s-primary: #ff5e00;">
     <main>
         <header>
             <h1>
@@ -102,54 +49,7 @@
             </p>
         </footer>
     </main>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="-500 -500 1000 1000" preserveAspectRatio="xMidYMid slice">
-        <defs>
-            <circle id="x" r="1" fill="var(--s-primary, #333)" />
-            <circle id="y" r="1" fill="var(--s-seconday, #fff)" />
-        </defs>
-        <use href="#x" transform="rotate(22)">
-            <animateTransform attributeName="transform" values="0,0;550,0" dur="1.9s" repeatCount="indefinite" additive="sum" />
-        </use>
-        <use href="#y" transform="rotate(45)">
-            <animateTransform attributeName="transform" values="0,0;560,0" dur="2.6s" repeatCount="indefinite" additive="sum" />
-        </use>
-        <use href="#x" transform="rotate(68)">
-            <animateTransform attributeName="transform" values="0,0;510,0" dur="2.1s" repeatCount="indefinite" additive="sum" />
-        </use>
-        <use href="#y" transform="rotate(90)">
-            <animateTransform attributeName="transform" values="0,0;575,0" dur="2.4s" repeatCount="indefinite" additive="sum" />
-        </use>
-        <use href="#x" transform="rotate(112)">
-            <animateTransform attributeName="transform" values="0,0;595,0" dur="1.8s" repeatCount="indefinite" additive="sum" />
-        </use>
-        <use href="#y" transform="rotate(135)">
-            <animateTransform attributeName="transform" values="0,0;655,0" dur="2.7s" repeatCount="indefinite" additive="sum" />
-        </use>
-        <use href="#x" transform="rotate(158)">
-            <animateTransform attributeName="transform" values="0,0;515,0" dur="2.2s" repeatCount="indefinite" additive="sum" />
-        </use>
-        <use href="#y" transform="rotate(180)">
-            <animateTransform attributeName="transform" values="0,0;580,0" dur="2.3s" repeatCount="indefinite" additive="sum" />
-        </use>
-        <use href="#x" transform="rotate(202)">
-            <animateTransform attributeName="transform" values="0,0;550,0" dur="2.0s" repeatCount="indefinite" additive="sum" />
-        </use>
-        <use href="#y" transform="rotate(225)">
-            <animateTransform attributeName="transform" values="0,0;560,0" dur="2.5s" repeatCount="indefinite" additive="sum" />
-        </use>
-        <use href="#x" transform="rotate(248)">
-            <animateTransform attributeName="transform" values="0,0;505,0" dur="1.9s" repeatCount="indefinite" additive="sum" />
-        </use>
-        <use href="#y" transform="rotate(270)">
-            <animateTransform attributeName="transform" values="0,0;575,0" dur="2.3s" repeatCount="indefinite" additive="sum" />
-        </use>
-        <use href="#x" transform="rotate(338)">
-            <animateTransform attributeName="transform" values="0,0;598,0" dur="2.0s" repeatCount="indefinite" additive="sum" />
-        </use>
-        <use href="y" transform="rotate(315)">
-            <animateTransform attributeName="transform" values="0,0;535,0" dur="2.6s" repeatCount="indefinite" additive="sum" />
-        </use>
-    </svg>
+    m8_partial([svg/svg-bg-1.svg])
 </body>
 
 </html>

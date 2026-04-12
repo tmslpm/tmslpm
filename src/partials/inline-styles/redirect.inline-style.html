@@ -1,0 +1,128 @@
+<style>
+    :root {
+        font-family: system-ui, sans-serif;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;  
+        box-sizing: border-box;
+    }
+
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+
+    }
+
+    body {
+        background: #111;
+        color: var(--s-seconda);
+    }
+
+    body,
+    main,
+    .wrapper-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 17px;
+    }
+
+    footer {
+        font-size: 12px;
+        letter-spacing: 0.08em;
+        opacity: 0.5;
+    }
+
+    svg {
+        z-index: -1;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 100%;
+    }
+
+    .wrapper-img {
+        background: color-mix(in srgb, var(--s-primary) 5%, transparent);
+        border: 1px solid color-mix(in srgb, var(--s-primary) 35%, transparent);
+        border-radius: 21px;
+        padding: 9px;
+    }
+
+    a {
+        color: var(--s-primary);
+        font-weight: 700;
+        text-decoration: none;
+        border-bottom: 1px solid var(--s-primary)
+    }
+
+    img {
+        filter: drop-shadow(0 0 16px color-mix(in srgb, var(--s-primary) 65%, transparent))
+    }
+
+    h1 {
+        font-size: 21px;
+        font-weight: 500
+    }
+
+    h1 span:nth-of-type(1) {
+        animation: t1 1.8s ease-in-out infinite
+    }
+
+    h1 span:nth-of-type(2) {
+        animation: t2 1.8s ease-in-out infinite
+    }
+
+    h1 span:nth-of-type(3) {
+        animation: t3 1.8s ease-in-out infinite
+    }
+
+    @keyframes t1 {
+        0% {
+            olor: var(--s-primary)
+        }
+
+        20%,
+        100% {
+            color: inherit
+        }
+    }
+
+    @keyframes t2 {
+
+        0%,
+        20% {
+            color: inherit
+        }
+
+        40% {
+            olor: var(--s-primary)
+        }
+
+        60%,
+        100% {
+            color: inherit
+        }
+    }
+
+    @keyframes t3 {
+
+        0%,
+        60% {
+            color: inherit
+        }
+
+        80% {
+            olor: var(--s-primary)
+        }
+
+        100% {
+            color: inherit
+        }
+    }
+</style>
