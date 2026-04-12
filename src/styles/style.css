@@ -3,7 +3,11 @@ body {
     background: #0c0c25;
 }
 
-footer, header {
+footer {
+    background: #1c1c2e;
+}
+
+header {
     background: #1c1c2e;
 }
 
