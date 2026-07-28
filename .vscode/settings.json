@@ -1,0 +1,16 @@
+{
+  "telemetry.telemetryLevel": "off",
+  "telemetry.feedback.enabled": false,
+  "telemetry.editStats.enabled": false,
+  "workbench.experimental.modernUI": true,
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.expand": false,
+  "explorer.fileNesting.patterns": {
+    "README.md": "*.md, CODEOWNERS",
+    "tsconfig.json": "tsconfig.*.json",
+    ".env": ".env.*"
+  },
+  "editor.codeActionsOnSave": {
+    "source.organizeImports.biome": "explicit"
+  },
+}
