@@ -1,15 +1,7 @@
 {
 	"name": "tmslpm public",
 	"image": "mcr.microsoft.com/devcontainers/base:noble",
-	"features": {
-		"ghcr.io/devcontainers/features/python:1": {
-			"installTools": false
-		},
-		"ghcr.io/devcontainers/features/common-utils": {
-			"installZsh": true,
-			"configureZshAsDefaultShell": true
-		}
-	},
+	"features": {},
 	"customizations": {
 		"codespaces": {
 			"openFiles": [
