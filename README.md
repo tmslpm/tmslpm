@@ -1,18 +1,18 @@
-![Header 18-24 - Section: Hello World](https://raw.githubusercontent.com/tmslpm/tmslpm/refs/heads/main/.github/assets/18-24/header.svg)
+![Header 6-12 - Section: Hello World](https://raw.githubusercontent.com/tmslpm/tmslpm/refs/heads/main/.github/assets/6-12/header.svg)
 
 
-![Divider 18-24](https://raw.githubusercontent.com/tmslpm/tmslpm/refs/heads/main/.github/assets/18-24/divider.svg)
+![Divider 6-12](https://raw.githubusercontent.com/tmslpm/tmslpm/refs/heads/main/.github/assets/6-12/divider.svg)
 
 <h3 align=center>Hello World</h3>
 <p align=center>Welcome to my profile</p>
 
 
-![Divider 18-24](https://raw.githubusercontent.com/tmslpm/tmslpm/refs/heads/main/.github/assets/18-24/divider.svg)
+![Divider 6-12](https://raw.githubusercontent.com/tmslpm/tmslpm/refs/heads/main/.github/assets/6-12/divider.svg)
 
-![Divider 18-24](https://raw.githubusercontent.com/tmslpm/tmslpm/refs/heads/main/.github/assets/18-24/stars.svg)
+![Divider 6-12](https://raw.githubusercontent.com/tmslpm/tmslpm/refs/heads/main/.github/assets/6-12/stars.svg)
 
 
 
-![Divider 18-24](https://raw.githubusercontent.com/tmslpm/tmslpm/refs/heads/main/.github/assets/18-24/divider.svg)
+![Divider 6-12](https://raw.githubusercontent.com/tmslpm/tmslpm/refs/heads/main/.github/assets/6-12/divider.svg)
 
-<p align=center>🤖 <i>Friday 04 September 2026 - 19:23 UTC</i></p>
+<p align=center>🤖 <i>Saturday 05 September 2026 - 04:17 UTC</i></p>
